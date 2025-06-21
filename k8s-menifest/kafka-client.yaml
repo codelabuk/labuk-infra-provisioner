@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kafka-client
+  namespace: labuk-event-tool
+spec:
+  containers:
+    - name: kafka-client
+      image: docker.io/bitnami/kafka:4.0.0-debian-12-r7
+      command: [ "sleep", "infinity" ]
+  restartPolicy: Never

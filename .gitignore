@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# MacOS (optional)
+.DS_Store
+
+# Logs
+*.log
