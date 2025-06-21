@@ -1,0 +1,10 @@
+auth:
+  username: labukuser
+  password: labukpass
+  database: labukdb
+
+primary:
+  persistence:
+    enabled: true
+    size: 2Gi
+    
