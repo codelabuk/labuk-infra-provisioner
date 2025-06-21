@@ -1,9 +1,24 @@
 replicaCount: 1
+
+listeners:
+  client:
+    protocol: PLAINTEXT
+    name: PLAINTEXT
+    port: 9092
+
+advertisedListeners:
+  client:
+    name: PLAINTEXT
+    address: kafka.labuk-event-tool.svc.cluster.local
+    port: 9092
+
 auth:
   enabled: false
+
 persistence:
   enabled: true
   size: 2Gi
+
 zookeeper:
   replicaCount: 1
   persistence:
